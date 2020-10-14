@@ -1,0 +1,56 @@
+/* style.css */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+ul { list-style-type: none;}
+a { text-decoration: none;}
+body {
+    font-family: "맑은 고딕", sans-serif;
+    font-size: 16px;
+    color: #222328; /* 기본 텍스트 색 */
+    background: #fff; /* 기본 배경색 */
+}
+
+#main_header {
+    width: 1200px; height: 100px;
+    margin: 0 auto;
+    position: relative;
+/*    background: #ddd;*/
+}
+#main_header > h1 {
+    width: 200px; height: 40px;
+    position: absolute;
+    top: 30px;
+}
+
+#gnb {
+    position: absolute;
+/*    outline: 1px solid red;*/
+    right: 0; top: 40px;
+}
+#gnb > .depth1 > li {
+    float: left;
+    text-align: center;
+    width: 180px;
+    background: #fff;
+}
+#gnb > .depth1 > li a {
+    display: block;
+    padding: 5px;
+    color: #222328;
+    font-size: 18px;
+    font-weight: bold;
+}
+#gnb > .depth1 > li a:hover {
+    background: #666;
+    color: #fff;
+}
+
+/* 2단계 메뉴 */
+#gnb .depth2 {
+    margin-top: 26px;
+    display: none;
+    padding-bottom: 10px;
+}
+
