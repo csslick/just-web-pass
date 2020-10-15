@@ -9,7 +9,11 @@
 </head>
 <body>
     <header id="main_header">
-        <h1><img src="./images/logo.png" alt="just 쇼핑몰"></h1>
+        <h1>
+            <a href="./">
+                <img src="./images/logo.png" alt="just 쇼핑몰">
+            </a>
+        </h1>
         <nav id="gnb">
             <ul class="depth1">
                 <li><a href="#">탑</a>
@@ -57,11 +61,71 @@
     </section>
     
     <section id="content">
-        
+       <article class="tab_area">
+        <div class="tab_group">
+            <a href="#notice" class="selected">공지사항</a>
+            <a href="#gallery">갤러리</a>
+        </div>
+        <div 
+           id="notice" 
+           class="tab_contents1 show">
+            <ul>
+                <li>
+                    <a href="#">공지사항입니다.</a>
+                    <span class="date">2020.10.15</span>
+                </li>
+                <li>
+                    <a href="#">공지사항입니다.</a>
+                    <span class="date">2020.10.15</span>
+                </li>
+                <li>
+                    <a href="#">공지사항입니다.</a>
+                    <span class="date">2020.10.15</span>
+                </li>
+                <li>
+                    <a href="#">공지사항입니다.</a>
+                    <span class="date">2020.10.15</span>
+                </li>
+            </ul>
+        </div>
+        <div id="gallery" class="tab_contents2">
+            <img src="http://placehold.it/130x130" alt="1">
+            <img src="http://placehold.it/130x130" alt="2">
+            <img src="http://placehold.it/130x130" alt="1">
+        </div>   
+       </article>
+       <article class="banner1">
+           <img src="./images/banner1.jpg" alt="배너">
+       </article>
+       <article class="banner2">
+           <img src="./images/banner2.jpg" alt="앱 설치 바로가기">
+       </article>
     </section>
     
     <footer id="main_footer">
-        
+        <div class="footer_logo">
+           <a href="./">
+             <img src="./images/footer_logo.png" alt="footer logo">              
+           </a>
+        </div>
+        <div class="copy">
+            <address>서울특별시 중앙로 123 2F JUST 쇼핑몰</address>
+            <p>copyright by just shopping mall. all right reserved.</p>
+        </div>
+        <div class="sns">
+            <a href="#"><img src="http://placehold.it/30x30" alt="트위터"></a>
+            <a href="#"><img src="http://placehold.it/30x30" alt="페이스북"></a>
+            <a href="#"><img src="http://placehold.it/30x30" alt="인스타그램"></a>
+        </div>
     </footer>
+    
+    <!-- 레이어 팝업창 -->
+    <div class="popup">
+        <header>
+            <h1>공지사항</h1>
+        </header>
+        <p>코로나로 인하여 행사가 무기한 연기되었습니다. 이용에 착오없으시기 바랍니다.</p>
+        <button class="btn-close">X</button>
+    </div>
 </body>
 </html>
